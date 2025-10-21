@@ -48,7 +48,9 @@ export default async function Home() {
         <GameDownloadBtn url={globalData.data.game_download_url} />
         <SocialsBtn
           facebookUrl={globalData.data.fanpage_url}
-          tiktokUrl={globalData.data.discord_url}
+          discordUrl={globalData.data.discord_url}
+          tiktokUrl={globalData.data.tiktok_url}
+          youtubeUrl={globalData.data.youtube_url}
         />
       </div>
     </div>

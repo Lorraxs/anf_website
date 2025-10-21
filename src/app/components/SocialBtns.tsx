@@ -5,11 +5,36 @@ import React from "react";
 interface SocialsBtnProps {
   facebookUrl?: string;
   tiktokUrl?: string;
+  discordUrl?: string;
+  youtubeUrl?: string;
 }
 
-function SocialsBtn({ facebookUrl, tiktokUrl }: SocialsBtnProps) {
+function SocialsBtn({
+  facebookUrl,
+  tiktokUrl,
+  discordUrl,
+  youtubeUrl,
+}: SocialsBtnProps) {
   return (
     <div className="flex gap-2">
+      <button
+        className="hover:scale-105 transition-transform w-[calc(0.7529*88px)] h-[calc(0.7529*88px)]"
+        style={{
+          backgroundImage: "url('/discord_btn.png')",
+          /* width: "88px",
+          height: "88px", */
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          border: "none",
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          if (discordUrl) {
+            window.open(discordUrl, "_blank");
+          }
+        }}
+      />
       <button
         className="hover:scale-105 transition-transform w-[calc(0.7529*88px)] h-[calc(0.7529*88px)]"
         style={{
@@ -25,6 +50,24 @@ function SocialsBtn({ facebookUrl, tiktokUrl }: SocialsBtnProps) {
         onClick={() => {
           if (facebookUrl) {
             window.open(facebookUrl, "_blank");
+          }
+        }}
+      />
+      <button
+        className="hover:scale-105 transition-transform w-[calc(0.7529*88px)] h-[calc(0.7529*88px)]"
+        style={{
+          backgroundImage: "url('/youtube_btn.png')",
+          /* width: "88px",
+          height: "88px", */
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          border: "none",
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          if (youtubeUrl) {
+            window.open(youtubeUrl, "_blank");
           }
         }}
       />
