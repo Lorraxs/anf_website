@@ -9,7 +9,7 @@ interface GameDownloadBtnProps {
 function GameDownloadBtn({ url }: GameDownloadBtnProps) {
   return (
     <button
-      className="hover:scale-105 transition-transform w-[calc(0.7529*232px)] h-[calc(0.7529*52px)]"
+      className="hover:scale-105 transition-transform w-[calc(0.7529*308px)] h-[calc(0.7529*69px)] mb-[60px]"
       style={{
         backgroundImage: "url('/game_download_btn.png')",
         /* width: "232px",

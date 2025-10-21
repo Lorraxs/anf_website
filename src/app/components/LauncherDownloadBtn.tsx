@@ -9,7 +9,7 @@ interface LauncherDownloadBtnProps {
 function LauncherDownloadBtn({ url }: LauncherDownloadBtnProps) {
   return (
     <button
-      className="hover:scale-105 transition-transform w-[calc(0.7529*460px)] h-[calc(0.7529*103px)]"
+      className="hover:scale-105 transition-transform w-[calc(0.7529*612px)] h-[calc(0.7529*137px)]"
       style={{
         backgroundImage: "url('/launcher_download_btn.png')",
         /* width: "460px",
